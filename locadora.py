@@ -10,7 +10,7 @@ from PySide6.QtWidgets import (
 from PySide6.QtGui import QAction, QKeySequence
 from PySide6.QtCore import Qt, QDate, Signal
 
-# CONSTANTES
+# CONSTANTESA
 
 # Colunas que a tabela do catalogo vai mostrar, nessa ordem.
 COLUNAS = ["Titulo", "Diretor", "Ano", "Genero", "Duracao", "Estoque", "Status"]

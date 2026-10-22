@@ -276,12 +276,10 @@ class CarregarDadosWorker(QRunnable):
 
     def run(self):
         try:
-            # Simula uma tarefa demorada em paralelo (ex: busca na rede/banco)
             time.sleep(2)
 
             filmes = Repositorio.carregar_filmes()
             if not filmes:
-                # Primeira execucao: cria um catalogo inicial
                 filmes = [
                     Filme("De Volta para o Futuro", "Robert Zemeckis", 1985, "Ficcao Cientifica", 116, 3),
                     Filme("O Iluminado", "Stanley Kubrick", 1980, "Terror", 146, 2),
